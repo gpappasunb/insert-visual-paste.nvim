@@ -4,13 +4,13 @@
 
 The main workflow is:
 
-1. You are in insert mode.
-2. You press a key to leave insert mode.
-3. You move elsewhere and visually select some text.
-4. You yank it with `y`.
-5. The plugin jumps back to your original cursor position.
-6. It pastes the yanked text.
-7. It enters insert mode again.
+1. You are in insert mode
+2. You press a key (default <LocalLeader>v) to leave insert mode
+3. You move elsewhere and visually select some text
+4. You yank it with `y`
+5. The plugin jumps back to your original cursor position
+6. It pastes the yanked text
+7. It enters insert mode again
 
 This is useful when you are typing something and realize you want to reuse a word, phrase, or small piece of text from somewhere else in the buffer.
 
@@ -18,22 +18,21 @@ This is useful when you are typing something and realize you want to reuse a wor
 
 ## Features
 
-- Leaves insert mode and remembers your original cursor position.
-- Waits for the next visual-mode yank.
-- Copies the yanked text into a configurable register, default `z`.
-- Jumps back to the original position.
-- Pastes the selected text there.
-- Returns to insert mode automatically.
-- Optional mode to enter visual mode immediately.
-- Configurable mapping and register.
-- Small and dependency-free.
+- Leaves insert mode and remembers your original cursor position
+- Waits for the next visual-mode yank
+- Copies the yanked text into a configurable register, default `z`
+- Jumps back to the original position
+- Pastes the selected text there
+- Returns to insert mode automatically
+- Optional mode to enter visual mode immediately
+- Configurable mapping and register
+- Small and dependency-free
 
 ---
 
 ## Requirements
 
 - Neovim 0.8 or newer.
-- Tested on Neovim 0.12.
 
 ---
 
