@@ -91,7 +91,24 @@ Using your GitHub repository:
 
 ---
 
-## Note about `<LocalLeader>`
+## Suggested key mappings
+
+Add these lines to your lua configuration file:
+
+```lua
+vim.keymap.set({ 'n', 'i' }, '<LocalLeader>yj', '<cmd>InsertVisualPasteFromBelow<CR>', {
+  silent = true,
+  desc = 'Paste rest of line below at cursor',
+})
+
+vim.keymap.set({ 'n', 'i' }, '<LocalLeader>yk', '<cmd>InsertVisualPasteFromAbove<CR>', {
+  silent = true,
+  desc = 'Paste rest of line above at cursor',
+})
+```
+
+
+### Note about `<LocalLeader>`
 
 The default mapping uses `<LocalLeader>`.
 
